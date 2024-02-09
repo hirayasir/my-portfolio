@@ -1,0 +1,88 @@
+/*.navbar-nav{
+  margin-left: auto;
+}*/
+body{
+  position:relative;
+}
+
+header#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20%;
+  color: white;
+  text-align: center;
+  /*text-shadow: 2px 2px 5px rgb(80, 0, 0);*/ 
+  text-shadow: 2px 2px 3px rgb(128, 128, 128);
+}
+
+.card {
+  width: 200px;
+  display: inline-block;
+  margin: 10px;
+  
+}
+
+.card-img-top{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+section{
+  padding: 40px 0;
+}
+
+
+section#properties{
+  background-color:#fafafa;
+}
+
+section#testimonials{
+  background-color:#d4d4d4;
+}
+
+section#about-us{
+  background-color:#fafafa;
+}
+
+
+#properties-target, #testimonials-target, #about-us-target{
+
+  position: relative;
+  top: -100px;
+}
+
+.scroll-top .navbar {
+  background-color: transparent !important;
+}
+
+
+.carousel-item img{
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carousel-item:after{
+  content:"";
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0,0,0,0.3);
+}
+
+.carousel-caption{
+  z-index:1;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,207 @@
+         <!-- Document Type Declaration: Defines the document type and version of HTML being used -->
+         <!DOCTYPE html>
+
+         <!-- Opening HTML tag -->
+         <html>
+
+           <!-- The head section of the HTML document, contains metadata and links to external resources -->
+           <head>
+             <!-- Character set declaration: Specifies the character encoding for the document -->
+             <meta charset="utf-8">
+
+             <!-- Viewport meta tag: Defines how the page should be displayed on different devices -->
+             <meta name="viewport" content="width=device-width">
+
+             <!-- Title of the webpage -->
+             <title>Vacation Rentals</title>
+
+             <!-- Link to load Bootstrap Icons library -->
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+             <!-- Link to load Bootstrap CSS library -->
+             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+             <!-- Link to load custom CSS styles -->
+             <link href="style.css" rel="stylesheet" type="text/css" />
+           </head>
+
+           <!-- The body section of the HTML document, contains the visible content -->
+           <body class="scroll-top" 
+             data-bs-spy="scroll"
+             data-bs-target=".navbar"
+             data-bs-offset="100">
+
+             <!-- Navigation bar -->
+             <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+               <div class="container">
+                 <!-- Brand/logo -->
+                 <a href="#Home" class="navbar-brand">
+                   <!-- Bootstrap Icon for house door -->
+                   <i class="bi bi-house-door"></i>
+                 </a>
+
+                 <!-- Navbar toggler button -->
+                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <!-- Navbar links -->
+                 <div id="nav-collapse" class="collapse navbar-collapse">
+                   <div class="navbar-nav ms-auto">
+                     <!-- Navigation links to different sections of the webpage -->
+                     <a href="#properties-target" class="nav-link">Properties</a>
+                     <a href="#testimonials-target" class="nav-link">Testimonials</a>
+                     <a href="#about-us-target" class="nav-link">About Us</a>
+                   </div>
+                 </div> 
+               </div>
+             </nav>
+
+             <!-- Header section -->
+             <header id="home">
+               <h2 class="display-2">Your Dream Home <span class="text-muted">is Just A Click Away!</span></h2>
+               <br>
+               <!-- Buttons for user interaction -->
+               <button class="btn btn-outline-light">Learn More</button>
+               <button class="btn btn-outline-info">Book Now</button>
+             </header>
+
+             <!-- Section for displaying properties -->
+             <section id="properties">
+               <!-- Anchor point for properties section -->
+               <div id="properties-target"></div>
+               <div class="container">
+                 <!-- Added row with justify-content-center class -->
+                 <div class="row justify-content-center">
+                 <!-- Individual property cards -->
+                 <!-- Card 1 -->
+                 <div class="card">
+                   <img src="img/home-1.jpeg" alt="An image of a home" class="card-img-top">
+                   <div class="card-body">
+                     <h5 class="card-title">A beautiful Home</h5>
+                     <p class="card-text">A description of a beautiful home</p>
+                   </div>
+                   <div class="card-footer">
+                     Entire Place <span class="price">$100</span>
+                   </div>
+                 </div>
+                 <!-- Card 2 -->
+                 <div class="card">
+                   <img src="img/home-2.jpeg" alt="An image of a home 2" class="card-img-top">
+                   <div class="card-body">
+                     <h5 class="card-title">A beautiful Home</h5>
+                     <p class="card-text">A description of a beautiful home</p>
+                   </div>
+                   <div class="card-footer">
+                     Entire Place <span class="price">$250</span>
+                   </div>
+                 </div>
+                 <!-- Card 3 -->
+                 <div class="card">
+                   <img src="img/home-3.jpeg" alt="Home 3" class="card-img-top">
+                   <div class="card-body">
+                     <h5 class="card-title">A beautiful Home</h5>
+                     <p class="card-text">A description of a beautiful home</p>
+                   </div>
+                   <div class="card-footer">
+                     Entire Place <span class="price">$150</span>
+                   </div>
+                 </div>
+                 <!-- Card 4 -->
+                 <div class="card">
+                   <img src="img/home-4.jpeg" alt="Home 4" class="card-img-top">
+                   <div class="card-body">
+                     <h5 class="card-title">A beautiful Home</h5>
+                     <p class="card-text">A description of a beautiful home</p>
+                   </div>
+                   <div class="card-footer">
+                     Entire Place <span class="price">$99</span>
+                   </div>
+                 </div>
+               </div>
+             </section>
+
+             <!-- Section for displaying testimonials -->
+             <section id="testimonials">
+               <!-- Anchor point for testimonials section -->
+               <div id="testimonials-target"></div>
+               <div class="container">
+                 <h2>Testimonials</h2>
+                 <!-- Carousel for displaying testimonials -->
+                 <div id="carouselExampleCaptions" class="carousel slide">
+                   <!-- Carousel indicators -->
+                   <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                   </div>
+                   <!-- Carousel inner content -->
+                   <div class="carousel-inner">
+                     <!-- Testimonial 1 -->
+                     <div class="carousel-item active">
+                       <img src="img/testimonial-1.jpeg" class="d-block w-100" alt="Testimonial-1">
+                       <div class="carousel-caption d-md-block">
+                         <h5>First slide label</h5>
+                         <p>Some representative placeholder content for the first slide.</p>
+                       </div>
+                     </div>
+                     <!-- Testimonial 2 -->
+                     <div class="carousel-item">
+                       <img src="img/testimonial-2.jpeg" class="d-block w-100" alt="Testimonial-2">
+                       <div class="carousel-caption d-md-block">
+                         <h5>Second slide label</h5>
+                         <p>Some representative placeholder content for the second slide.</p>
+                       </div>
+                     </div>
+                     <!-- Testimonial 3 -->
+                     <div class="carousel-item">
+                       <img src="img/testimonial-3.jpeg" class="d-block w-100" alt="Testimonial-3">
+                       <div class="carousel-caption d-md-block">
+                         <h5>Third slide label</h5>
+                         <p>Some representative placeholder content for the third slide.</p>
+                       </div>
+                     </div>
+                   </div>
+                   <!-- Carousel controls -->
+                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                   </button>
+                 </div>
+               </div>
+             </section>
+
+             <!-- Section for displaying information about the company -->
+             <section id="about-us">
+               <!-- Anchor point for about-us section -->
+               <div id="about-us-target"></div>
+               <div class="container">
+                 <h2>About Us</h2>
+                 <!-- Paragraphs providing information about the company -->
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias sit laborum dolores, obcaecati odio provident a? Sit, alias officiis neque non enim, eum nihil excepturi commodi, in earum porro.</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias sit laborum dolores, obcaecati odio provident a? Sit, alias officiis neque non enim, eum nihil excepturi commodi, in earum porro.</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias sit laborum dolores, obcaecati odio provident a? Sit, alias officiis neque non enim, eum nihil excepturi commodi, in earum porro.</p>
+               </div>
+             </section>
+
+             <!-- JavaScript libraries -->
+             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+             <!-- Custom JavaScript file -->
+             <script src="script.js"></script>
+           </body>
+           <!-- Footer section -->
+           <footer class="bg-dark text-light py-4">
+             <div class="container text-center">
+               <!-- Footer content -->
+               <p>&copy; 2024 Vacation Rentals. All rights reserved.</p>
+               <p>Designed by Hira Yasir</p>
+             </div>
+           </footer>
+
+         </html>
